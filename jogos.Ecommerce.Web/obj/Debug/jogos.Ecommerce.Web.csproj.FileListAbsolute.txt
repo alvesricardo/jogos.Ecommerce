@@ -75,3 +75,11 @@ C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\obj\D
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\obj\Debug\jogos.Ecommerce.Web.csproj.CopyComplete
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\obj\Debug\jogos.Ecommerce.Web.dll
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\obj\Debug\jogos.Ecommerce.Web.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Ecommerce.Repositorios.Comum.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Ecommerce.Repositorios.Entity.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Repositorios.Comum.Entity.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Ecommerce.Repositorios.Comum.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Ecommerce.Repositorios.Entity.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Ecommerce.Repositorios.Entity.dll.config
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Repositorios.Comum.Entity.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Web\bin\jogos.Repositorios.Comum.Entity.dll.config

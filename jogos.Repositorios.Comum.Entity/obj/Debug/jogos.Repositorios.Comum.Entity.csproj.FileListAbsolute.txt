@@ -1,0 +1,14 @@
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\jogos.Repositorios.Comum.Entity.dll.config
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\jogos.Repositorios.Comum.Entity.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\jogos.Repositorios.Comum.Entity.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\EntityFramework.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\jogos.Ecommerce.Repositorios.Comum.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\jogos.Ecommerce.Repositorios.Comum.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\EntityFramework.xml
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\obj\Debug\jogos.Repositorios.Comum.Entity.csprojAssemblyReference.cache
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\obj\Debug\jogos.Repositorios.Comum.Entity.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\obj\Debug\jogos.Repositorios.Comum.Entity.csproj.CopyComplete
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\obj\Debug\jogos.Repositorios.Comum.Entity.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Repositorios.Comum.Entity\obj\Debug\jogos.Repositorios.Comum.Entity.pdb

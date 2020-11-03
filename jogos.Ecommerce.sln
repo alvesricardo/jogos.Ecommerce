@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jogos.Ecommerce.Repositorio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jogos.Repositorios.Comum.Entity", "jogos.Repositorios.Comum.Entity\jogos.Repositorios.Comum.Entity.csproj", "{11E22FF9-28F9-4E79-B06E-0F02D3F6C7E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jogos.Ecommerce.Repositorios.Entity", "jogos.Ecommerce.Repositorios.Entity\jogos.Ecommerce.Repositorios.Entity.csproj", "{79B12B64-34CA-4C17-9904-77C43F884DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{11E22FF9-28F9-4E79-B06E-0F02D3F6C7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E22FF9-28F9-4E79-B06E-0F02D3F6C7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11E22FF9-28F9-4E79-B06E-0F02D3F6C7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B12B64-34CA-4C17-9904-77C43F884DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B12B64-34CA-4C17-9904-77C43F884DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B12B64-34CA-4C17-9904-77C43F884DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B12B64-34CA-4C17-9904-77C43F884DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{C4A8924B-0152-41A8-808F-EC87659E8889} = {5929E658-CD47-4949-9EE9-37163F3055FF}
 		{87E7653B-5010-4D8C-8E82-EFCD4EF370D4} = {68BCD43B-2B25-4EAF-A773-D802506F124C}
 		{11E22FF9-28F9-4E79-B06E-0F02D3F6C7E7} = {68BCD43B-2B25-4EAF-A773-D802506F124C}
+		{79B12B64-34CA-4C17-9904-77C43F884DD1} = {68BCD43B-2B25-4EAF-A773-D802506F124C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D91DB18-CFAF-4CE6-9061-9A4842388BBF}

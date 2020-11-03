@@ -9,18 +9,21 @@ using System.Web.Mvc;
 using AutoMapper;
 using jogos.Ecommerce.Dados.Entity.Context;
 using jogos.Ecommerce.Dominio;
+using jogos.Ecommerce.Repositorios.Comum;
+using jogos.Ecommerce.Repositorios.Entity;
 using jogos.Ecommerce.Web.ViewModel.FichaTecnica;
 
 namespace jogos.Ecommerce.Web.Controllers
 {
     public class FichaTecnicaController : Controller
     {
-        private JogoDbContext db = new JogoDbContext();
+        private IRepositorioGenerico<FichaTecnica, int>
+             repositorioFichaTecnica = new FichaTecnicaRepositorio(new JogoDbContext());
 
         // GET: FichaTecnica
         public ActionResult Index()
         {
-            return View(Mapper.Map<List<FichaTecnica>, List<FichaTecnicaIndexViewModel>>(db.ficha.ToList()));
+            return View(Mapper.Map<List<FichaTecnica>, List<FichaTecnicaIndexViewModel>>(repositorioFichaTecnica.Selecionar()));
         }
 
         // GET: FichaTecnica/Details/5
@@ -30,7 +33,7 @@ namespace jogos.Ecommerce.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FichaTecnica fichaTecnica = db.ficha.Find(id);
+            FichaTecnica fichaTecnica = repositorioFichaTecnica.SelecionarPorId(id.Value);
             if (fichaTecnica == null)
             {
                 return HttpNotFound();
@@ -53,9 +56,8 @@ namespace jogos.Ecommerce.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                FichaTecnica fichaTecnica = Mapper.Map<FichaTecnicaViewModel, FichaTecnica>(viewModel);  
-                db.ficha.Add(fichaTecnica);
-                db.SaveChanges();
+                FichaTecnica fichaTecnica = Mapper.Map<FichaTecnicaViewModel, FichaTecnica>(viewModel);
+                repositorioFichaTecnica.Inserir(fichaTecnica);
                 return RedirectToAction("Index");
             }
 
@@ -69,7 +71,7 @@ namespace jogos.Ecommerce.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FichaTecnica fichaTecnica = db.ficha.Find(id);
+            FichaTecnica fichaTecnica = repositorioFichaTecnica.SelecionarPorId(id.Value);
             if (fichaTecnica == null)
             {
                 return HttpNotFound();
@@ -87,8 +89,7 @@ namespace jogos.Ecommerce.Web.Controllers
             if (ModelState.IsValid)
             {
                 FichaTecnica fichaTecnica = Mapper.Map<FichaTecnicaViewModel, FichaTecnica>(viewModel);
-                db.Entry(fichaTecnica).State = EntityState.Modified;
-                db.SaveChanges();
+                repositorioFichaTecnica.Alterar(fichaTecnica);
                 return RedirectToAction("Index");
             }
             return View(viewModel);
@@ -101,7 +102,7 @@ namespace jogos.Ecommerce.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            FichaTecnica fichaTecnica = db.ficha.Find(id);
+            FichaTecnica fichaTecnica = repositorioFichaTecnica.SelecionarPorId(id.Value);
             if (fichaTecnica == null)
             {
                 return HttpNotFound();
@@ -114,19 +115,8 @@ namespace jogos.Ecommerce.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            FichaTecnica fichaTecnica = db.ficha.Find(id);
-            db.ficha.Remove(fichaTecnica);
-            db.SaveChanges();
+            repositorioFichaTecnica.ExcluirPorId(id);
             return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }

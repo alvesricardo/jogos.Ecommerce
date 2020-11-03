@@ -211,9 +211,21 @@
       <Project>{c4a8924b-0152-41a8-808f-ec87659e8889}</Project>
       <Name>jogos.Ecommerce.Generica.Entity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\jogos.Ecommerce.Repositorios.Comum\jogos.Ecommerce.Repositorios.Comum.csproj">
+      <Project>{87e7653b-5010-4d8c-8e82-efcd4ef370d4}</Project>
+      <Name>jogos.Ecommerce.Repositorios.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jogos.Ecommerce.Repositorios.Entity\jogos.Ecommerce.Repositorios.Entity.csproj">
+      <Project>{79b12b64-34ca-4c17-9904-77c43f884dd1}</Project>
+      <Name>jogos.Ecommerce.Repositorios.Entity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\jogos.Filmes.Dados.Entity\jogos.Ecommerce.Dados.Entity.csproj">
       <Project>{fa1f5888-eea2-41d4-b479-44e2302d23d5}</Project>
       <Name>jogos.Ecommerce.Dados.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jogos.Repositorios.Comum.Entity\jogos.Repositorios.Comum.Entity.csproj">
+      <Project>{11e22ff9-28f9-4e79-b06e-0f02d3f6c7e7}</Project>
+      <Name>jogos.Repositorios.Comum.Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

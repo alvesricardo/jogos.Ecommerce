@@ -1,0 +1,6 @@
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Repositorios.Comum\bin\Debug\jogos.Ecommerce.Repositorios.Comum.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Repositorios.Comum\bin\Debug\jogos.Ecommerce.Repositorios.Comum.pdb
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Repositorios.Comum\obj\Debug\jogos.Ecommerce.Repositorios.Comum.csprojAssemblyReference.cache
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Repositorios.Comum\obj\Debug\jogos.Ecommerce.Repositorios.Comum.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Repositorios.Comum\obj\Debug\jogos.Ecommerce.Repositorios.Comum.dll
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Repositorios.Comum\obj\Debug\jogos.Ecommerce.Repositorios.Comum.pdb
