@@ -26,6 +26,15 @@ namespace jogos.Ecommerce.Web.Controllers
             return View(Mapper.Map<List<FichaTecnica>, List<FichaTecnicaIndexViewModel>>(repositorioFichaTecnica.Selecionar()));
         }
 
+
+        public ActionResult FiltarPorNome(String Pesquisa)
+        {
+            List<FichaTecnica> fichaTecnicas = repositorioFichaTecnica.Selecionar().Where(a => a.Nome.Contains(Pesquisa)).ToList();
+            List<FichaTecnicaIndexViewModel> viewModels = Mapper.Map<List<FichaTecnica>, List<FichaTecnicaIndexViewModel>>(fichaTecnicas);
+
+            return Json(viewModels, JsonRequestBehavior.AllowGet);
+        }
+
         // GET: FichaTecnica/Details/5
         public ActionResult Details(int? id)
         {

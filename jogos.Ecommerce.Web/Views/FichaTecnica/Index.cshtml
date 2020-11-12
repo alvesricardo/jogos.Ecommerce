@@ -9,67 +9,87 @@
 <p>
     @Html.ActionLink("Criar Novo Registro", "Create")
 </p>
+<div class="row">
+    <div class="col-md-10">
+        <input type="text" id="pesquisaFichaTecnica" class="form-control" />
+    </div>
+    <div class="col-md-2">
+        <button id="btnPesquisaFichaTecnica">Pesquisar</button>
+    </div>
+
+</div>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Desenvolvedora)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Publicadora)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AnoLancamento)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Plataforma)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Genero)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Enredo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th></th>
-    </tr>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desenvolvedora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publicadora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnoLancamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plataforma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Enredo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
 
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Nome)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Desenvolvedora)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Publicadora)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.AnoLancamento)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Plataforma)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Genero)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Enredo)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Email)
-    </td>
-    <td>
-        @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
-        @Html.ActionLink("Detalhar", "Details", new { id = item.Id }) |
-        @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
-    </td>
-</tr>
-}
 
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Desenvolvedora)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Publicadora)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AnoLancamento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Plataforma)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Enredo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Detalhar", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
+
+@section Scripts{
+    <script>
+
+    </script>    
+}
