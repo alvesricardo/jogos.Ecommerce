@@ -12,9 +12,11 @@ C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Ecommerce.Dados.Entity.csprojAssemblyReference.cache
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.Migrations.MigracaoInicial.resources
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.Migrations.MigracaoEmail.resources
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.Migrations.AdicaoPlataforma.resources
+C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.Migrations.AdicaoFabricante.resources
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Ecommerce.Dados.Entity.csproj.GenerateResource.cache
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Ecommerce.Dados.Entity.csproj.CoreCompileInputs.cache
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Ecommerce.Dados.Entity.csproj.CopyComplete
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.dll
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.pdb
-C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Filmes.Dados.Entity\obj\Debug\jogos.Filmes.Dados.Entity.Migrations.MigracaoEmail.resources

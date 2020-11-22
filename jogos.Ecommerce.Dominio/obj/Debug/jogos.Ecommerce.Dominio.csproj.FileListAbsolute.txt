@@ -3,4 +3,3 @@ C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Dominio\b
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Dominio\obj\Debug\jogos.Ecommerce.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Dominio\obj\Debug\jogos.Ecommerce.Dominio.dll
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Dominio\obj\Debug\jogos.Ecommerce.Dominio.pdb
-C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Dominio\obj\Debug\jogos.Ecommerce.Dominio.csprojAssemblyReference.cache

@@ -31,10 +31,9 @@ namespace jogos.Ecommerce.Web.ViewModel.FichaTecnica
         [Display(Name = "Ano de Lançamento")]
         public int AnoLancamento { get; set; }
 
-        [Required(ErrorMessage = "A plataforma é obrigatório")]
-        [MaxLength(100, ErrorMessage = "Plataforma deve ter no máximo 100 caracteres")]
+        [Required(ErrorMessage = "Selecione uma plataforma")]
         [Display(Name = "Plataforma")]
-        public string Plataforma { get; set; }
+        public long IdPlataforma { get; set; }
 
         [Required(ErrorMessage = "O gênero é obrigatório")]
         [MaxLength(100, ErrorMessage = "Gênero deve ter no máximo 100 caracteres")]

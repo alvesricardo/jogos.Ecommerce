@@ -136,12 +136,15 @@
     <Compile Include="AutoMapper\ViewModelParaDominioProfile.cs" />
     <Compile Include="Controllers\FichaTecnicaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlataformasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\FichaTecnica\FichaTecnicaIndexViewModel.cs" />
     <Compile Include="ViewModel\FichaTecnica\FichaTecnicaViewModel.cs" />
+    <Compile Include="ViewModel\Plataforma\PlataformaIndexViewModel.cs" />
+    <Compile Include="ViewModel\Plataforma\PlataformaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -184,6 +187,11 @@
     <Content Include="Views\FichaTecnica\Details.cshtml" />
     <Content Include="Views\FichaTecnica\Edit.cshtml" />
     <Content Include="Views\FichaTecnica\Index.cshtml" />
+    <Content Include="Views\Plataformas\Create.cshtml" />
+    <Content Include="Views\Plataformas\Delete.cshtml" />
+    <Content Include="Views\Plataformas\Details.cshtml" />
+    <Content Include="Views\Plataformas\Edit.cshtml" />
+    <Content Include="Views\Plataformas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

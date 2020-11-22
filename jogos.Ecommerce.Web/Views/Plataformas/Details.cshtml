@@ -1,0 +1,31 @@
+﻿@model jogos.Ecommerce.Web.ViewModel.Plataforma.PlataformaIndexViewModel
+@{
+    ViewBag.Title = "Detalhes da Plataforma";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Plataforma</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomePlataforma)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fabricante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomePlataforma)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Fabricante)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.IdPlataforma }) |
+    @Html.ActionLink("Voltar para o início", "Index")
+</p>

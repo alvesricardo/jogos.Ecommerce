@@ -23,7 +23,7 @@ namespace jogos.Ecommerce.Dados.Entity.TypeConfiguration
 
             Property(p => p.AnoLancamento).IsRequired().HasColumnName("Ano de Lançamento");
 
-            Property(p => p.Plataforma).HasMaxLength(100).IsRequired().HasColumnName("Plataforma");
+            Property(p => p.IdPlataforma).IsRequired().HasColumnName("Plataforma");
 
             Property(p => p.Genero).IsRequired().HasMaxLength(100).HasColumnName("Genero");
 
@@ -34,7 +34,7 @@ namespace jogos.Ecommerce.Dados.Entity.TypeConfiguration
 
         protected override void ConfigurarChaveEstrangeira()
         {
-            
+            HasRequired(p => p.Plataforma).WithMany(p => p.Fichas).HasForeignKey(fk => fk.IdPlataforma);
         }
 
         protected override void ConfigurarChavePrimaria()

@@ -12,6 +12,7 @@ using jogos.Ecommerce.Dominio;
 using jogos.Ecommerce.Repositorios.Comum;
 using jogos.Ecommerce.Repositorios.Entity;
 using jogos.Ecommerce.Web.ViewModel.FichaTecnica;
+using jogos.Ecommerce.Web.ViewModel.Plataforma;
 
 namespace jogos.Ecommerce.Web.Controllers
 {
@@ -19,6 +20,9 @@ namespace jogos.Ecommerce.Web.Controllers
     {
         private IRepositorioGenerico<FichaTecnica, int>
              repositorioFichaTecnica = new FichaTecnicaRepositorio(new JogoDbContext());
+
+        private IRepositorioGenerico<Plataforma, long>
+            repositorioPlataformas = new PlataformaRepositorio(new JogoDbContext());
 
         // GET: FichaTecnica
         public ActionResult Index()
@@ -53,6 +57,12 @@ namespace jogos.Ecommerce.Web.Controllers
         // GET: FichaTecnica/Create
         public ActionResult Create()
         {
+            List<PlataformaIndexViewModel> plataformas = Mapper.Map<List<Plataforma>, List<PlataformaIndexViewModel>>(repositorioPlataformas.Selecionar());
+
+            SelectList dropDownPlataformas = new SelectList(plataformas, "IdPlataforma", "NomePlataforma");
+
+            ViewBag.DropDownPlataformas = dropDownPlataformas;
+            
             return View();
         }
 

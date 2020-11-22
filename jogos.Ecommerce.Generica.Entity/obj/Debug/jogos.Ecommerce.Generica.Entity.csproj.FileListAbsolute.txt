@@ -5,7 +5,6 @@ C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\bin\Debug\EntityFramework.xml
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\obj\Debug\jogos.Ecommerce.Generica.Entity.csprojAssemblyReference.cache
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\obj\Debug\jogos.Ecommerce.Generica.Entity.csproj.CoreCompileInputs.cache
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\obj\Debug\jogos.Ecommerce.Generica.Entity.csproj.CopyComplete
 C:\Users\ricar\Desktop\projetos ASPNET\jogos.Ecommerce\jogos.Ecommerce.Generica.Entity\obj\Debug\jogos.Ecommerce.Generica.Entity.dll

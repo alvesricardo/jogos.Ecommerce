@@ -23,7 +23,7 @@ namespace jogos.Ecommerce.Web.ViewModel.FichaTecnica
         public int AnoLancamento { get; set; }
 
         [Display(Name = "Plataforma")]
-        public string Plataforma { get; set; }
+        public long IdPlataforma { get; set; }
 
         [Display(Name = "Genero")]
         public string Genero { get; set; }
