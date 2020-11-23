@@ -18,7 +18,7 @@
     </div>
 
 </div>
-<table class="table">
+<table class="table" id="tblFicha">
     <thead>
         <tr>
             <th>
@@ -90,6 +90,40 @@
 
 @section Scripts{
     <script>
+
+        $(document).ready(function(){
+            $("#btnPesquisaFichaTecnica").click(function () {
+                var termoPesquisa = $("#pesquisaFichaTecnica").val();
+                $.ajax({
+                    method: "GET", url: "/FichaTecnica/FiltarPorNome?pesquisa=" + termoPesquisa,
+                    success: function (data) {
+                        $("#tblFicha tbody > tr").remove();
+                        $.each(data, function (i, ficha) {
+                            $("#tblFicha tbody").append(
+                                "<tr>"
+                                + "<td>" + ficha.Nome + "</td>" +
+                                + "<td>" + ficha.Desenvolvedora + "</td>"
+                                + "<td>" + ficha.Publicadora + "</td>"
+                                + "<td>" + ficha.AnoLancamento + "</td>"
+                                + "<td>" + ficha.IdPlataforma + "</td>"
+                                + "<td>" + ficha.Genero + "</td>"
+                                + "<td>" + ficha.Enredo + "</td>"
+                                + "<td>" + ficha.Email + "</td>"
+                                + "<td>"
+                                + "<a href='/FichaTecnica/Edit/" + ficha.Id + "'>Editar</a>"
+                                + "<a href='/FichaTecnica/Details/" + ficha.Id + "'>Detalhar</a>"
+                                + "<a href='/FichaTecnica/Delete/" + ficha.Id + "'>Deletar</a>"
+                                + "<td>"
+                                + "</tr>"
+                            );
+                        });
+                    },
+                    error: function (data) {
+                        alert("Houve um erro de pesquisa!");
+                    }
+                });
+            });
+        });
 
     </script>    
 }
