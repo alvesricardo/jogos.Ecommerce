@@ -13,7 +13,7 @@ namespace jogos.Ecommerce.Web.ViewModel.Plataforma
         public int IdPlataforma { get; set; }
 
         [Required(ErrorMessage = "Nome da plataforma é obrigatório")]
-        [MaxLength(200, ErrorMessage = "Deve ter no máximo 30 caracteres")]
+        [MaxLength(200, ErrorMessage = "Deve ter no máximo 200 caracteres")]
         [Display(Name = "Nome da Plataforma")]
         public string NomePlataforma { get; set; }
 

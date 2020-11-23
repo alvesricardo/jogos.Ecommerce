@@ -71,7 +71,7 @@ namespace jogos.Ecommerce.Web.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nome,Desenvolvedora,Publicadora,AnoLancamento,Plataforma,Genero,Enredo,Email")] FichaTecnicaViewModel viewModel)
+        public ActionResult Create([Bind(Include = "Id,Nome,Desenvolvedora,Publicadora,AnoLancamento,IdPlataforma,Genero,Enredo,Email")] FichaTecnicaViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
@@ -95,6 +95,15 @@ namespace jogos.Ecommerce.Web.Controllers
             {
                 return HttpNotFound();
             }
+
+            List<PlataformaIndexViewModel> plataformas = Mapper.Map<List<Plataforma>, List<PlataformaIndexViewModel>>(repositorioPlataformas.Selecionar());
+
+            SelectList dropDownPlataformas = new SelectList(plataformas, "IdPlataforma", "NomePlataforma");
+
+            ViewBag.DropDownPlataformas = dropDownPlataformas;
+
+
+
             return View(Mapper.Map<FichaTecnica, FichaTecnicaViewModel>(fichaTecnica));
         }
 
@@ -103,7 +112,7 @@ namespace jogos.Ecommerce.Web.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nome,Desenvolvedora,Publicadora,AnoLancamento,Plataforma,Genero,Enredo,Email")] FichaTecnicaViewModel viewModel)
+        public ActionResult Edit([Bind(Include = "Id,Nome,Desenvolvedora,Publicadora,AnoLancamento,IdPlataforma,Genero,Enredo,Email")] FichaTecnicaViewModel viewModel)
         {
             if (ModelState.IsValid)
             {

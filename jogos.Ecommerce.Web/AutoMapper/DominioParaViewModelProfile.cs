@@ -14,9 +14,12 @@ namespace jogos.Ecommerce.Web.AutoMapper
         protected override void Configure()
         {
             Mapper.CreateMap<FichaTecnica, FichaTecnicaIndexViewModel>()
-                .ForMember(p => p.Nome, opt => 
-                { opt.MapFrom(src => string.Format("{0} {1}", src.Nome, src.AnoLancamento, ToString())); });
-                    
+                .ForMember(p => p.Nome, opt =>
+                {
+                    opt.MapFrom(src => string.Format("{0} {1}", src.Nome, src.AnoLancamento, ToString()));
+                });
+                
+
             Mapper.CreateMap<FichaTecnica, FichaTecnicaViewModel>();
 
 

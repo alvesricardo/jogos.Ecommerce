@@ -55,7 +55,7 @@ namespace jogos.Ecommerce.Web.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IdPlataforma,NomePlataforma")] PlataformaViewModel viewModel)
+        public ActionResult Create([Bind(Include = "IdPlataforma, NomePlataforma, Fabricante")] PlataformaViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace jogos.Ecommerce.Web.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IdPlataforma,NomePlataforma")] PlataformaViewModel viewModel)
+        public ActionResult Edit([Bind(Include = "IdPlataforma,NomePlataforma, Fabricante")] PlataformaViewModel viewModel)
         {
             if (ModelState.IsValid)
             {

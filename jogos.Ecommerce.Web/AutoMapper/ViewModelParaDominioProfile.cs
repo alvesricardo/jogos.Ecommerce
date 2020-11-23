@@ -16,7 +16,6 @@ namespace jogos.Ecommerce.Web.AutoMapper
             Mapper.CreateMap<FichaTecnicaViewModel, FichaTecnica>();
 
             Mapper.CreateMap<PlataformaViewModel, Plataforma>();
-
         }
     }
 }
