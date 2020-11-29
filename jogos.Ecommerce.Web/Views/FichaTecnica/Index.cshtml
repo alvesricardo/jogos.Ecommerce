@@ -95,7 +95,7 @@
             $("#btnPesquisaFichaTecnica").click(function () {
                 var termoPesquisa = $("#pesquisaFichaTecnica").val();
                 $.ajax({
-                    method: "GET", url: "/FichaTecnica/FiltarPorNome?pesquisa=" + termoPesquisa,
+                    method: "GET", url: "/FichaTecnica/FiltrarPorNome/" + termoPesquisa,
                     success: function (data) {
                         $("#tblFicha tbody > tr").remove();
                         $.each(data, function (i, ficha) {

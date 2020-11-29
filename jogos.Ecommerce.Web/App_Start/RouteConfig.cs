@@ -14,6 +14,11 @@ namespace jogos.Ecommerce.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "FiltarPorNome", 
+                url: "FichaTecnica/FiltrarPorNome/{pesquisa}", 
+                defaults: new {controller = "FichaTecnica", action = "FiltrarPorNome", pesquisa = UrlParameter.Optional });
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

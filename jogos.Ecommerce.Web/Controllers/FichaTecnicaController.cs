@@ -11,11 +11,13 @@ using jogos.Ecommerce.Dados.Entity.Context;
 using jogos.Ecommerce.Dominio;
 using jogos.Ecommerce.Repositorios.Comum;
 using jogos.Ecommerce.Repositorios.Entity;
+using jogos.Ecommerce.Web.Filtros;
 using jogos.Ecommerce.Web.ViewModel.FichaTecnica;
 using jogos.Ecommerce.Web.ViewModel.Plataforma;
 
 namespace jogos.Ecommerce.Web.Controllers
 {
+        [LogActionFilter]
     public class FichaTecnicaController : Controller
     {
         private IRepositorioGenerico<FichaTecnica, int>
@@ -31,7 +33,7 @@ namespace jogos.Ecommerce.Web.Controllers
         }
 
 
-        public ActionResult FiltarPorNome(String Pesquisa)
+        public ActionResult FiltrarPorNome(String Pesquisa)
         {
             List<FichaTecnica> fichaTecnicas = repositorioFichaTecnica.Selecionar().Where(a => a.Nome.Contains(Pesquisa)).ToList();
             List<FichaTecnicaIndexViewModel> viewModels = Mapper.Map<List<FichaTecnica>, List<FichaTecnicaIndexViewModel>>(fichaTecnicas);
