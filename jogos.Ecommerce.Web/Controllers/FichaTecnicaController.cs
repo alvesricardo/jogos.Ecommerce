@@ -18,6 +18,7 @@ using jogos.Ecommerce.Web.ViewModel.Plataforma;
 namespace jogos.Ecommerce.Web.Controllers
 {
         [LogActionFilter]
+        [Authorize]
     public class FichaTecnicaController : Controller
     {
         private IRepositorioGenerico<FichaTecnica, int>
@@ -27,6 +28,7 @@ namespace jogos.Ecommerce.Web.Controllers
             repositorioPlataformas = new PlataformaRepositorio(new JogoDbContext());
 
         // GET: FichaTecnica
+        
         public ActionResult Index()
         {
             return View(Mapper.Map<List<FichaTecnica>, List<FichaTecnicaIndexViewModel>>(repositorioFichaTecnica.Selecionar()));

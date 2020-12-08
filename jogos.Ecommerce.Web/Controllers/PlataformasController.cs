@@ -15,6 +15,7 @@ using jogos.Ecommerce.Web.ViewModel.Plataforma;
 
 namespace jogos.Ecommerce.Web.Controllers
 {
+    [Authorize]
     public class PlataformasController : Controller
     {
         private IRepositorioGenerico<Plataforma, long>
